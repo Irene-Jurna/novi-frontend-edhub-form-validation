@@ -6,16 +6,22 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<section id="registration-container">
     <h1>Registreren</h1>
     <form onsubmit="hier-hebben-we-react-voor-nodig">
-        <label for="user-name-field">Gebruikersnaam: </label>
-        <input type="text" id="user-name-field" name="username"/>
+        <label for="username-field">Gebruikersnaam: </label>
+        <input
+                type="text"
+                id="username-field"
+                name="username"
+        />
         <label for="password-field">Wachtwoord: </label>
-        <input type="password" id="password-field"/>
+        <input
+                type="password"
+                id="password-field"
+                name="password"
+        />
         <button type="submit">Verzenden</button>
     </form>
-</section>
 <script src="main.js"></script>
 </body>
 </html>
@@ -30,4 +36,12 @@
 <!--5. Geef de invoervelden een span of p element, zodat de waarschuwing gekoppeld kan worden-->
 
 <!--SCRIPT-->
-<!--1.-->
+<!--1. Schrijf een dummy functie (handleInputChange) die we straks aan de event listener kunnen koppelen.
+2. Maak een nieuwe variable (const) en sla daarin de referentie naar het gebruikersnaam-inputveld op
+3. Voeg een event listener toe aan het gebruikersnaam-inputveld
+4. Voeg het event object toe als parameter aan de functie
+5. Spreek de property target.value aan om de ingevulde waarde van de gebruiker te zien
+6. Herhaal dit voor het wachtwoordveld
+7. Pas de functie aan, zodat je deze voor beide input-velden kunt gebruiken. Sla twee variabelen op om te weten welk inputveld aangesproken is.
+5. Pas de dummy functie aan naar een functie die aangeeft wanneer een gebruiker @ in het gebruikersnaam-inputveld invult. De functie logt: "Gebruikersnaam mag geen @ bevatten"
+-->
