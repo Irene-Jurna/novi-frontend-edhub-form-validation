@@ -5,8 +5,6 @@ html {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /*width: 100%;*/
-    /*height: 100%;*/
 }
 
 h1 {
@@ -31,4 +29,12 @@ label {
 
 button {
     max-width: 150px;
+}
+
+#warning-message-username{
+    color: red;
+}
+
+#warning-message-password {
+    color: red;
 }
